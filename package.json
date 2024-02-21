@@ -1,4 +1,5 @@
 {
+<<<<<<< HEAD
   "name": "animais-eslint",
   "version": "1.0.0",
   "description": "",
@@ -19,5 +20,9 @@
     "eslint-plugin-import": "^2.14.0",
     "webpack": "^5.90.1",
     "webpack-cli": "^5.1.4"
+=======
+  "dependencies": {
+    "jquery": "^3.7.1"
+>>>>>>> b56fd433d51be1ef1da2ab5c9c33c05e186bd18d
   }
 }
