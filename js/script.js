@@ -10,6 +10,7 @@ import initFetchAnimais from "./modules/fetch-animais.js";
 import initFetchBitcoin from "./modules/fetch-bitcoin.js";
 import initAnimacaoScroll from "./modules/scroll-animacao.js";
 
+initFetchAnimais();
 initScrollSuave();
 initAccordion();
 initTabNav();
@@ -18,6 +19,5 @@ initTooltip();
 initDropdownMenu();
 initMenuMobile();
 initFuncionamento();
-initFetchAnimais();
 initFetchBitcoin();
 initAnimacaoScroll();
