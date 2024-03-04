@@ -8,7 +8,7 @@ import initMenuMobile from "./modules/menu-mobile.js";
 import initFuncionamento from "./modules/funcionamento.js";
 import fetchAnimais from "./modules/fetch-animais.js";
 import initFetchBitcoin from "./modules/fetch-bitcoin.js";
-import initAnimacaoScroll from "./modules/scroll-animacao.js";
+import ScrollAnima from "./modules/scroll-anima.js";
 
 const accordion = new Accordion('[data-anime="accordion"] dt');
 accordion.init();
@@ -29,11 +29,13 @@ modal.init();
 const toolTip = new Tooltip("[data-tooltip]");
 toolTip.init();
 
+const scrollAnima = new ScrollAnima('[data-anime="scroll"]');
+scrollAnima.init();
+
 initScrollSuave();
 initDropdownMenu();
 initMenuMobile();
 initFuncionamento();
 initFetchBitcoin();
-initAnimacaoScroll();
 
 fetchAnimais("../../animaisapi.json", ".numeros-grid");
