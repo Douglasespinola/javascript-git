@@ -9,6 +9,7 @@ import Funcionamento from "./modules/funcionamento.js";
 import fetchAnimais from "./modules/fetch-animais.js";
 import initFetchBitcoin from "./modules/fetch-bitcoin.js";
 import ScrollAnima from "./modules/scroll-anima.js";
+import SlideNav from "./modules/slide.js";
 
 const accordion = new Accordion('[data-anime="accordion"] dt');
 accordion.init();
@@ -45,3 +46,7 @@ initScrollSuave();
 initFetchBitcoin();
 
 fetchAnimais("./animaisapi.json", ".numeros-grid");
+
+const slide = new SlideNav(".slide", ".slide-wrapper");
+slide.init();
+slide.addControl(".custom-controls");
